@@ -11,7 +11,7 @@ sub register {
     my $cost;
     if (exists $config->{cost}) {
         $cost = delete $config->{cost};
-        Carp::confess 'cost must be a positive int <= 99' unless $cost =~ /^\d{1,2}$/ and $cost > 0;
+        Carp::confess 'cost must be a positive int <= 99' unless defined $cost and $cost =~ /^\d{1,2}$/ and $cost > 0;
     } else {
         $cost = 12;
     }

@@ -1,6 +1,8 @@
 Revision history for Mojolicious-Plugin-BcryptSecure
 
 {{$NEXT}}
+
+0.02  2019-10-20 14:53:13 CDT
         - Add Test::Pod to testing requirements.
 
 0.01  2019-10-20 13:26:44 CDT
